@@ -1,14 +1,12 @@
 <template>
   <div class="Display">
-    <div>
-    </div>
+    <p></p>
   </div>
 </template>
 
 <script>
 export default {
   name: 'Display',
-  number: 7,
 };
 </script>
 
@@ -19,5 +17,17 @@ export default {
       width: 100%;
       height: 42%;
       border-bottom: 1px solid lightgray;
+      margin: 0px;
+      text-align: right;
+      font-size: 60px;
+      padding-top: 11%;
+
+      p {
+
+          height: 100%;
+          vertical-align: center;
+          margin:0px;
+          padding: 10px;
+      }
   }
 </style>

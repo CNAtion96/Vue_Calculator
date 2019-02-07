@@ -6,6 +6,7 @@
 
 <script>
 import Calculator from './components/Calculator.vue';
+import Display from './components/Display.vue'
 
 export default {
   name: 'app',

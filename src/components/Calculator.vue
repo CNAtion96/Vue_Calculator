@@ -1,16 +1,24 @@
 <template>
   <div class="calculator">
     <Display  />
+    <Key buttonText='6' />
   </div>
 </template>
 
 <script>
 import Display from './Display';
+import Key from './Key';
 
 export default {
   name: 'Calculator',
   components: {
     Display,
+    Key,
+  },
+  data() {
+    return {
+      displayNum: '8'
+    }
   }
 };
 </script>
@@ -19,6 +27,7 @@ export default {
 <style scoped lang="scss">
   .calculator {
     position: absolute;
+    padding: 0px;
     width: 300px;
     height: 500px;
     border: 1px solid black;
