@@ -1,12 +1,17 @@
 <template>
   <div class="calculator">
-    <div id="display"></div>
+    <Display  />
   </div>
 </template>
 
 <script>
+import Display from './Display';
+
 export default {
   name: 'Calculator',
+  components: {
+    Display,
+  }
 };
 </script>
 
@@ -21,11 +26,5 @@ export default {
     top: 50%;
     left: 50%;
     margin: -250px 0 0 -150px;
-
-    #display {
-      width: 100%;
-      height: 42%;
-      border-bottom: 1px solid gray;
-    }
   }
 </style>
